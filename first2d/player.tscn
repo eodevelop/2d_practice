@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://b4rj2dkbpckyc"]
+
+[ext_resource type="Texture2D" uid="uid://dhtqvbty880r7" path="res://art/playerGrey_up1.png" id="1_ihmbt"]
+[ext_resource type="Texture2D" uid="uid://tmfm37uu2oy1" path="res://art/playerGrey_up2.png" id="2_1vlox"]
+[ext_resource type="Texture2D" uid="uid://cgy008b51b8bo" path="res://art/playerGrey_walk1.png" id="3_xineb"]
+[ext_resource type="Texture2D" uid="uid://doe5pg4mbb8f6" path="res://art/playerGrey_walk2.png" id="4_u2yhx"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o4tll"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ihmbt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_1vlox")
+}],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_xineb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_u2yhx")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="Player" type="Area2D"]
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1154, 689)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_o4tll")
+animation = &"walk"
