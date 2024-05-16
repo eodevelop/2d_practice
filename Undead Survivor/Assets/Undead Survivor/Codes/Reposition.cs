@@ -32,7 +32,6 @@ public class Reposition : MonoBehaviour
                 }
                 break;
             case "Enemy":
-                
                 break;
         }
     }
