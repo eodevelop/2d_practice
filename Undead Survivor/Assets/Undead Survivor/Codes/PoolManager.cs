@@ -23,6 +23,10 @@ public class PoolManager : MonoBehaviour
         // ... 선택한  풀의 놀고(비활성화 된) 있는 게임오브젝트 접근
             // ... 발견하면 select 변수에 할당
 
+        foreach (GameObject item in pools[index]) {
+            
+        }
+
         // ... 못 찾았으면
             // ... 새롭게 생성해서 select 변수에 할당
 
